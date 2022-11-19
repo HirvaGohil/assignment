@@ -1,0 +1,263 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil @Microsoft YaHei UI;}{\f1\fnil\fcharset0 @Microsoft YaHei UI;}}
+{\*\generator Riched20 10.0.22000}\viewkind4\uc1 
+\pard\sa200\sl240\slmult1\f0\fs28\lang9\bullet\f1 What are the benefits of using CSS? \par
+ANS:-1) Faster Page Speed. More code means slower page speed. ...\par
+     2) Better User Experience. CSS not only makes web pages easy on the eye, it also allows for user-friendly formatting. ...\par
+     3) Quicker Development Time. ...\par
+     4) Easy Formatting Changes. ...\par
+     5) Compatibility Across Devices.\par
+\par
+\f0\bullet\f1 What are the disadvantages of CSS? \par
+ANS:-Confusion due to many CSS levels. Beginners are more vulnerable to this issue. ...\par
+     Cross-Browser Issues. Different browsers work differently. ...\par
+     Security Issues. Security is important in today's world driven by technology and data. ...\par
+     Extra Work for Developers.\par
+\f0\bullet\f1 What is the difference between CSS2 and CSS3? \par
+ANS:-CSS3 has compatibility with external font styles through google fonts and typecast. It was not possible with earlier CSS1 and CSS2.\par
+    -The selectors in CSS3 has increased while CSS1 and CSS2 only had simple selectors.\par
+    -CSS1 AND CSS2 didn\rquote t have provision to specifically design the web layout. It is possible with the CSS3 grid system and template -layout module. It helped in creating layouts according to user components.\par
+\par
+\f0\bullet\f1 Name a few CSS style components \par
+ANS:-The components of css style are: 1)Selecter:HTML element name, id name, class name. 2)Property:It's like an attribute such as background color,font-size,position,text-align,color,border etc. 3)Values:which defines property or values allocate for properties.\par
+\f0\bullet\f1 What do you understand by CSS opacity?\par
+ANS:-The opacity CSS property sets the opacity of an element. Opacity is the degree to which content behind an element is hidden, and is the opposite of transparency.it applies to all elements.\par
+\par
+\f0\bullet\f1 How can the background color of an element be changed?\par
+ANS:-To add background color in HTML, use the CSS background-color property. Set it to the color name or code you want and place it inside a style attribute.\par
+\par
+\f0\bullet\f1 How can image repetition of the backup be controlled?\par
+ANS:-To control the repetition of an image in the background, use the background-repeat property. You can use no-repeat value for the background-repeat property if you do not want to repeat an image, in this case, the image will display only once.\par
+\par
+\f0\bullet\f1 What is the use of the background-position property?\par
+ANS:-The background-position property sets the starting position of a background image. By default, a background-image is placed at the top-left corner of an element, and repeated both vertically and horizontally.\par
+\par
+\f0\bullet\f1 Which property controls the image scroll in the background? \par
+ANS:-The background-attachment property sets whether a background image scrolls with the rest of the page, or is fixed.\par
+\par
+\f0\bullet\f1 Why should background and color be used as separate properties? \par
+ANS:-It enhances the legibility of style sheets. The background property is a complex property in CSS, and if it is combined with color, the complexity will further increase.\par
+\par
+\f0\bullet\f1 How to center block elements using CSS1? \par
+ANS:- By setting the properties margin-left and margin-right to auto and width to some explicit value.\par
+\par
+\f0\bullet\f1 How to maintain the CSS specifications? \par
+ANS:-Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written .CSS describes how elements should be rendered on screen, on paper, in speech, or on other media. we can maintain by applying different type of css properties.\par
+\f0\bullet\f1 What are the ways to integrate CSS as a web page?\par
+ANS:-CSS can be added to HTML documents in 3 ways:(1) Inline - by using the style attribute inside HTML elements.(2)Internal - by using a <style> element in the <head> section.(3)External - by using a <link> element to link to an external CSS file.\par
+\f0\bullet\f1 What is embedded style sheets? \par
+ANS:- Embedded Stylesheet allows you to define styles for a particular HTML document as a whole in one place.\par
+\par
+\f0\bullet\f1 What are the external style sheets? \par
+ANS:-An external style sheet is a separate CSS file that can be accessed by creating a link within the head section of the webpage. Multiple webpages can use the same link to access the stylesheet. The link to an external style sheet is placed within the head section of the page.\par
+\f0\bullet\f1 What are the advantages and disadvantages of using external style sheets?\par
+ANS:- advantagesone change to the style sheet will change all linked pages. \par
+                -> you can create classes of styles that can then be used on many different HTML elements.\par
+                -> consistent look and feel across multiple web pages.\par
+                -> improved load times because the css file is downloaded once and applied to each relevant page as needed.\par
+\par
+   disadvantages-> The additional download is expected to import documents having style information.\par
+                ->To render the documents, the outer template ought to be stacked.\par
+                ->Not practical for small style definitions.\par
+\f0\bullet\f1 What is the meaning of the CSS selector?\par
+ANS:-It is a pattern of elements and other terms that tell the browser which HTML elements should be selected to have the CSS property values inside the rule applied to them.\par
+\f0\bullet\f1 What are the media types allowed by CSS?\par
+ANS:-following media groups allowed by  css-> all,speech,screen,tv,braille,imbosed,handheld,print,projection,tty....\par
+\par
+\f0\bullet\f1 What is the rule set?\par
+ANS:-Each (valid) declaration block is preceded by one or more comma-separated selectors, which are conditions selecting some elements of the page. A selector group and an associated declarations block, together, are called a ruleset, or often a rule.   \par
+\f0\bullet\f1 Create Layout\par
+\par
+<!DOCTYPE html>\par
+<html lang="en">\par
+<head>\par
+    <style>\par
+    *\{\par
+        box-sizing: border-box;\par
+    \}\par
+    body\{\par
+        position: relative;\par
+        padding: 100px 200px;\par
+    \}\par
+    .upperrow\{\par
+        display: flex;\par
+    \}\par
+    .lowerrow\{\par
+        display: flex;\par
+    \}\par
+    .a\{\par
+        height: 300px;\par
+        width: 500px;\par
+        border: 0.1mm solid rgb(199, 197, 197);\par
+        margin:20px 20px;\par
+        font-size: medium;\par
+        transition: 0.2s;\par
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif\par
+        \par
+    \}\par
+    .a.a:hover\{\par
+        height: 310px;\par
+        width: 510px;\par
+        border: 0.1mm solid rgb(199, 197, 197);\par
+        margin:10px 10px;\par
+        font-size: medium;\par
+        \par
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif\par
+        \par
+    \}\par
+\par
+    .b\{\par
+        height: 300px;\par
+        width: 500px;\par
+        border: 0.1mm solid rgb(199, 197, 197);\par
+        margin: 20px 20px;\par
+        transition: 0.2s;\par
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif\par
+        \par
+    \}\par
+    .b.b:hover\{\par
+        height: 310px;\par
+        width: 510px;\par
+        border: 0.1mm solid rgb(199, 197, 197);\par
+        margin: 10px 10px;\par
+        font-size: medium;\par
+        \par
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif\par
+        \par
+        \par
+    \}\par
+    .c\{\par
+        height: 300px;\par
+        width: 500px;\par
+        border: 0.1mm solid rgb(199, 197, 197);\par
+        margin: 20px 20px;\par
+        transition: 0.2s;\par
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif\par
+    \}\par
+    .c.c:hover\{\par
+        height: 310px;\par
+        width: 510px;\par
+        border: 0.1mm solid rgb(199, 197, 197);\par
+        margin:10px 10px;\par
+        font-size: medium;\par
+        \par
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif\par
+        \par
+    \}\par
+    .d\{\par
+        height: 300px;\par
+        width: 500px;\par
+        border: 0.1mm solid rgb(199, 197, 197);\par
+        margin: 20px 20px;\par
+        transition: 0.2s;\par
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif\par
+        \par
+    \}\par
+    .d.d:hover\{\par
+        height: 310px;\par
+        width: 510px;\par
+        border: 0.1mm solid rgb(199, 197, 197);\par
+        margin: 10px 10px;\par
+        font-size: medium;\par
+        \par
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif\par
+        \par
+    \}\par
+    .e\{\par
+        height: 300px;\par
+        width: 500px;\par
+        border: 0.1mm solid rgb(199, 197, 197);\par
+        margin:20px 20px;\par
+        transition: 0.2s;\par
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif\par
+    \}\par
+    .e.e:hover\{\par
+        height: 310px;\par
+        width: 510px;\par
+        border: 0.1mm solid rgb(199, 197, 197);\par
+        margin: 10px 10px;\par
+        font-size: medium;\par
+        \par
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif\par
+        \par
+    \}\par
+    .f\{\par
+        height: 300px;\par
+        width: 500px;\par
+        border: 0.1mm solid rgb(199, 197, 197);\par
+        margin: 20px 20px;\par
+        transition: 0.2s;\par
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif\par
+        \par
+    \}\par
+    .f.f:hover\{\par
+        height: 310px;\par
+        width: 510px;\par
+        border: 0.1mm solid rgb(199, 197, 197);\par
+        margin: 10px 10px;\par
+        font-size:medium;\par
+        \par
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif\par
+        \par
+    \}\par
+    .p\{\par
+        padding: 0px 10px;\par
+    \}\par
+    \par
+    </style>\par
+    <meta charset="UTF-8">\par
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">\par
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\par
+    <title>Document</title>\par
+</head>\par
+<body>\par
+<div class="upperrow"> \par
+<div class="a">\par
+      <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8HB2k_Yze1gT0l1Ypn2ha0QsSABgQE9SegQ&usqp=CAU" height=200px width="100%"></a>\par
+      <div class="p">This is wider card with supporting text below as a natural lead in to additional content. This content is little bit longer.<br>\par
+        <button>VIEW</button><button>EDIT</button></div>\par
+    </div>\par
+    <div class="b">\par
+        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8HB2k_Yze1gT0l1Ypn2ha0QsSABgQE9SegQ&usqp=CAU" height=200px width="100%"></a>\par
+        <div class="p">This is wider card with supporting text below as a natural lead in to additional content. This content is little bit longer.<br>\par
+        <button>VIEW</button><button>EDIT</button></div>\par
+    </div>\par
+    <div class="c">\par
+        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8HB2k_Yze1gT0l1Ypn2ha0QsSABgQE9SegQ&usqp=CAU" height=200px width="100%"></a>\par
+        <div class="p"> This is wider card with supporting text below as a natural lead in to additional content. This content is little bit longer.<br>\par
+        <button>VIEW</button><button>EDIT</button></div>\par
+    </div>\par
+</div>\par
+<div class="lowerrow">\par
+    <div class="d">\par
+        <a href=""><img src="https://i.pinimg.com/736x/62/96/7f/62967f8b0ebf561e4a83145ea183aaff--change-background-background-colour.jpg"   height=200px width="100%"></a>\par
+        <div class="p">This is wider card with supporting text below as a natural lead in to additional content. This content is little bit longer.<br>\par
+        <button>VIEW</button><button>EDIT</button></div>\par
+    </div>\par
+    <div class="e">\par
+        <a href=""><img src="https://i.pinimg.com/736x/62/96/7f/62967f8b0ebf561e4a83145ea183aaff--change-background-background-colour.jpg"   height=200px width="100%"></a>\par
+        <div class="p"> This is wider card with supporting text below as a natural lead in to additional content. This content is little bit longer.<br>\par
+        <button>VIEW</button><button>EDIT</button></div>\par
+    </div>\par
+    <div class="f">\par
+        <a href=""><img src="https://i.pinimg.com/736x/62/96/7f/62967f8b0ebf561e4a83145ea183aaff--change-background-background-colour.jpg"   height=200px width="100%"></a>\par
+        <div class="p">This is wider card with supporting text below as a natural lead in to additional content. This content is little bit longer.<br>\par
+        <button>VIEW</button><button>EDIT</button></div>\par
+    </div>\par
+</div>\par
+</body>\par
+</html>\par
+Footer\par
+\'a9 2022 GitHub, Inc.\par
+Footer navigation\par
+Terms\par
+Privacy\par
+Security\par
+Status\par
+Docs\par
+Contact GitHub\par
+Pricing\par
+API\par
+
+\pard\sa200\sl276\slmult1 Train\par
+}
+ 
